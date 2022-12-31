@@ -54,7 +54,7 @@ export function fromMidi(midi: MidiValue): Note {
     const index = pianoRange % SEMITONES_IN_OCTAVE
     const pitch = PITCHES_REGISTRY[index]
     const isSharp = !NATURAL_PITCH_INDICES.includes(index)
-    const type = isSharp ? "sharp" : "natural"
+    const type = isSharp ? "Sharp" : "Natural"
     return { octave, pitch, index, type, midi }
 }
 
